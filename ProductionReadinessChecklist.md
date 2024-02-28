@@ -173,7 +173,7 @@ Define separate "environments" such as dev, stage, and prod. Each environment ca
 Your apps may need different configuration settings in each environment: e.g., different memory settings, different features on or off. Define these in config files that get checked into version control (e.g., dev-config.yml, stage-config.yml, prod-config.yml) and packaged with your app artifact (i.e., packaged directly into the Docker image for your app), and have your app boot up code pick the proper config file for the current environment during boot.
 
 [ ] Define your infrastructure as code
-Do not deploy anything by hand, by using the AWS Console, or the AWS CLI. Instead, define all of your[infrastructure as code](https://blog.gruntwork.io/a-comprehensive-guide-to-terraform-b3d32832baca) using tools such as [Terraform](https://www.terraform.io/), [Packer](https://www.packer.io/), and Docker.
+Do not deploy anything by hand, by using the AWS Console, or the AWS CLI. Instead, define all of your [infrastructure as code](https://blog.gruntwork.io/a-comprehensive-guide-to-terraform-b3d32832baca) using tools such as [Terraform](https://www.terraform.io/), [Packer](https://www.packer.io/), and Docker.
 
 [ ] Test your infrastructure code
 If all of your infrastructure is defined as code, you can create automated tests for it. The goal is to verify your infrastructure works as expected after every single commit, long before those infrastructure changes affect prod. See [Terratest](https://github.com/gruntwork-io/terratest) for more info.
