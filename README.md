@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HQ91TH5NPT929KR36AQXC6RE
-  version: v3
----
-
 # Plan
 
 - [ ] DX
